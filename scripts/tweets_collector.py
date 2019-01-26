@@ -90,7 +90,7 @@ class TwitterListener(StreamListener):
 
 def run_tweeter_listening():
     try:
-        time.sleep(60)
+        time.sleep(30)
         listener = TwitterListener(api, "test")
         stream = tweepy.Stream(auth, listener)
         keywords = get_tweeter_keywords_to_search()
